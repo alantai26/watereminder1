@@ -1,35 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import IntegerInput from './components/ui/integer-input.tsx';
+import TimeCalculator from './components/ui/time-calculator.tsx';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      {/* Header */}
+      <div className="flex flex-col items-center bg-gray-100 py-6 px-8">
+        <div className="w-full max-w-md text-center">
+          {/* WaterMinder title with a blue background just around the text */}
+          <h1 className="text-5xl font-extrabold tracking-wide bg-blue-600 text-white py-2 px-4 inline-block rounded-lg">
+            WaterMinder
+          </h1>
+          {/* Smaller text underneath WaterMinder */}
+          <p className="text-base mt-2 text-gray-700">
+            Stay hydrated, stay healthy!
+          </p>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+
+      {/* Content Section */}
+      <div className="flex justify-center w-full mt-8">
+        <div className="w-full max-w-md bg-white p-6 rounded-lg shadow-lg">
+          {/* First IntegerInput for water intake */}
+          <h2 className="text-2xl font-semibold mb-4 text-center">Amount of desired water to drink?</h2>
+          <IntegerInput label="Enter (in ounces)" unit="ounces" />
+
+          {/* Second IntegerInput for reminders */}
+          <h2 className="text-2xl font-semibold mt-6 mb-4 text-center">How many reminders would you like?</h2>
+          <IntegerInput label="Enter number of reminders" />
+
+          {/* Time Calculator */}
+          <div className="mt-6">
+            <TimeCalculator />
+          </div>
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
