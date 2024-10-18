@@ -10,5 +10,4 @@ import React, { useState } from 'react';
       >
         Calculate When Reminders Will Be
       </button>
-};
 

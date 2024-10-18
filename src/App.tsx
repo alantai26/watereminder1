@@ -1,6 +1,9 @@
-import './App.css';
+import React, { useState } from 'react';
 import IntegerInput from './components/ui/integer-input.tsx';
 import TimeCalculator from './components/ui/time-calculator.tsx';
+import ScheduleConverter from './components/ui/schedule-converter.tsx';
+
+
 
 function App() {
   return (
@@ -36,6 +39,7 @@ function App() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }
