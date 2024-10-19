@@ -5,7 +5,7 @@ interface IntegerInputProps {
   unit?: string;
 }
 
-const IntegerInput: React.FC<IntegerInputProps> = ({ label, unit }) => {
+const IntegerInput: React.FC<IntegerInputProps> = ({ label}) => {
   const [inputValue, setInputValue] = useState<string>('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,7 +14,7 @@ const IntegerInput: React.FC<IntegerInputProps> = ({ label, unit }) => {
     // Check if the value is an empty string or a valid integer
     if (value === '' || /^[0-9]+$/.test(value)) {
       setInputValue(value);
-    }
+    } 
   };
 
   return (
@@ -28,10 +28,6 @@ const IntegerInput: React.FC<IntegerInputProps> = ({ label, unit }) => {
         value={inputValue}
         onChange={handleInputChange}
       />
-      <p>
-        You entered: {inputValue}
-        {inputValue && unit ? ` ${unit}` : ''}.
-      </p>
     </div>
   );
 };
