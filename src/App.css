@@ -32,6 +32,6 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: 'Inter', sans-serif; /* Ensure this is added */
+    font-family: 'Inter', sans-serif; 
   }
 }

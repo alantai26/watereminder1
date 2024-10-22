@@ -11,7 +11,7 @@ const IntegerInput: React.FC<IntegerInputProps> = ({ label}) => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
 
-    // Check if the value is an empty string or a valid integer
+    
     if (value === '' || /^[0-9]+$/.test(value)) {
       setInputValue(value);
     } 

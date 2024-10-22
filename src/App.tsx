@@ -105,10 +105,10 @@ const App: React.FC = () => {
   return (
     <div
       className="min-h-screen flex items-center justify-center"
-      style={{ backgroundColor: '#e0f7fa' }} // Light blue background
+      style={{ backgroundColor: '#e0f7fa' }}
     >
       <div className="max-w-md mx-auto p-6 text-center relative w-full" style={{ maxWidth: '500px' }}>
-        {/* Water bottle background overlay */}
+     
         <div
           className="absolute inset-0 z-0"
           style={{
@@ -121,7 +121,7 @@ const App: React.FC = () => {
           }}
         />
 
-        {/* Add an overlay behind text for better readability */}
+      
         <div className="relative z-10 p-4">
           <div
             style={{
@@ -213,7 +213,7 @@ const App: React.FC = () => {
           </div>
         </div>
 
-        {/* Example Image below, outside of the form container */}
+        
         <div className="relative z-10 mt-8">
           <p className="text-sm mt-2">Example: Click to zoom</p>
           <img
