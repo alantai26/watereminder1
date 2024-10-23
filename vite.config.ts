@@ -4,8 +4,9 @@ import { defineConfig } from "vite"
 
 
 export default defineConfig({
-  base: "/repository-name/",
+  
   plugins: [react()],
+  base: '/watereminder1/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

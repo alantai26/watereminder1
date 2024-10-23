@@ -112,7 +112,7 @@ const App: React.FC = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(/images/bottle-water-plastic.png)',
+            backgroundImage: 'url(/watereminder1/images/bottle-water-plastic.png)',
             backgroundSize: 'contain',
             backgroundPosition: 'center bottom',
             backgroundRepeat: 'no-repeat',
@@ -217,7 +217,7 @@ const App: React.FC = () => {
         <div className="relative z-10 mt-8">
           <p className="text-sm mt-2">Example: Click to zoom</p>
           <img
-            src="/images/water-reminder-example.png" 
+            src="/watereminder1/images/water-reminder-example.png" 
             alt="WaterMinder Example"
             className={`mx-auto cursor-pointer ${
               isZoomed ? 'w-full' : 'w-32 h-32'
